@@ -1,0 +1,64 @@
+<html>
+    
+    <head>
+        
+        <title>Rohit Desale</title>
+        
+        <script>
+
+            let org = "S.T.E.S.& Co.Op. Edu. Society Ltd"
+            let strf = "Institute of Management Research and Development"
+            let strtr = "Institute of Management Research and Development"
+
+            document.write("Original Text =  "+ org);
+            console.log("Original Text : ", org);
+
+            document.write("<br><br>Uppercase =  ", org.toUpperCase());
+            console.log("Uppercase : ", org.toUpperCase());
+
+            document.write("<br><br>Lowercase =  ", org.toLowerCase());
+            console.log("Lowercase : ", org.toLowerCase());
+
+            document.write("<br><br>Character At Position 14 =  ",org.charAt(14));
+            console.log("Character At Position 14 = ",org.charAt(14));
+
+            document.write("<br><br>Is  Society Word is Included in String :  ",org.includes(" Society"));
+            console.log("Is  Society Word is Included in String : ",org.includes(" Society"));
+
+            document.write("<br><br>The Position of Word Society is :  ",org.search("Society"));
+            console.log("The Position of Word Character is : ",org.search("Society"));
+
+            strf = strf.concat(' ',",Shahada");
+            document.write("<br><br>Example of Concat = " ,strf);
+            console.log("Example of Concat = " ,strf);
+
+            document.write("<br><br>Text Before Trim = <pre>                Institute of Management Research and Development          </pre>");
+            console.log("Text Before Trim = " ,strtr);
+            strtr = strtr.trim();
+            document.write("<br>Text After Using Trim Function = " ,strtr);
+            console.log("Text After Using Trim Function = " ,strtr);
+
+            strf = strf.substring(0,32);
+            document.write("<br><br>Example of Substring Function = " ,strf);
+            console.log("Example of Substring Function = " ,strf);
+
+           
+            strf = strf.substr(0,32);
+            document.write("<br><br>Example of Substr Function = " ,strf);
+            console.log("Example of Substr Function = " ,strf);
+
+            strf = strf.slice(0,9);
+            document.write("<br><br>Example of Slice Function = " ,strf);
+            console.log("Example of Slice Function = " ,strf);
+
+            org = org.split('');
+            document.write("<br><br>Example of Split Function = " ,org);
+            console.log("Example of Split Function = " ,org);
+
+        </script>
+
+    </head>
+
+    <body></body>
+
+</html>
