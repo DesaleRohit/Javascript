@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Rohit_Desale Login_form</title>
+    <script>
+        let web = prompt("Your Experience about this Website    good/bad");
+        if (web === "good") 
+        {
+            alert("Thanks for Feedback");
+        }
+
+        function login() 
+        {
+
+            let choice = confirm("Are you sure you want to login?");
+            if (choice == true)
+            {
+                let uname = document.getElementById("txtUsername").value;
+                let upass = document.getElementById("txtPassword").value;
+                if (uname === "") 
+                {
+                    alert("Please enter the Username");
+                }
+                else if (upass === "") 
+                {
+                    alert("Please enter the Password");
+                }
+                else if (uname === "Admin" && upass === "Admin123") 
+                {
+                    alert("Wellcome Admin");
+                }
+                else 
+                {
+                    alert("Invalid Username or Password");
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body style="background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);">
+    <table cellspacing="10" align="center" style="margin-top: 100pt;" >
+        <caption><h2>Login Form</h2></caption>
+        <tr>
+            <td>Username :</td>
+            <td><input type="text" id="txtUsername" name="txtUsername" /></td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td><input type="text" id="txtPassword" name="txtPassword" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Login" onclick="login()" /></td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
