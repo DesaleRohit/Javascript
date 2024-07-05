@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script>
+        function changebg() 
+        {
+            document.body.style.background = 'Red';
+        }
+        function resetbg() 
+        {
+            document.body.style.background = 'Yellow';
+        }
+        function keypressdemo() 
+        {
+            console.log("Key Pressed");
+        }
+        function keydowndemo() 
+        {
+            console.log("Key Down");
+        }
+        function keyupdemo() 
+        {
+            console.log("Key up");
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" onmouseover="changebg()" onmouseout="resetbg()" onkeypress="keypressdemo()"
+        onkeydown="keydowndemo()" onkeyup="keyupdemo()" />
+</body>
+
+</html>
