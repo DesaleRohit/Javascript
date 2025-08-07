@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Click the btn to open Popup</h2>
+    <button class="popup-btn" onclick="openPopup()">Open Popup</button>
+
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h3>Hello!</h3>
+            <p>This is a Popup message</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
